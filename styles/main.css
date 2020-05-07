@@ -1,10 +1,40 @@
 .view-body {
-    width: 600px;
-    height: 500px;
+    width: 360px;
+    height: 600px;
 }
 
-.tca-header {
-    position: absolute;
-    left: 5%;
-    font-size: 18px;
+.header {
+  overflow: hidden;
+  border-bottom: 1px black solid;
+}
+
+.logoimg {
+    height: 50px;
+    width: 50px;
+    margin-left: 44%;
+}
+
+/* Style the header links */
+.header a {
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
