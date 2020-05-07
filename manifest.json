@@ -1,21 +1,21 @@
 {
-    "name":"quick-profiles",
-    "version":"1.0",
-    "manifest_version":2,
-    "description":"Quick profiles provides easy and quick access to several profiles on a single click.",
-    "browser_action": {
-        "default_title" : "Quick Profiles",
-        "default_popup":"ui/view.html"
-    },
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-    "permissions": [
-        "http://google.com/",
-        "tabs",
-        "<all_urls>",
-        "storage",
-        "contextMenus",
-        "notifications",
-        "tts",
-        "unlimitedStorage"
-    ]
+	"name": "quick-profiles",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Quick profiles provides easy and quick access to several profiles on a single click.",
+	"browser_action": {
+		"default_title": "Quick Profiles",
+		"default_popup": "ui/popup/view.html"
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"permissions": [
+		"http://google.com/",
+		"tabs",
+		"<all_urls>",
+		"storage",
+		"contextMenus",
+		"notifications",
+		"tts",
+		"unlimitedStorage"
+	]
 }
