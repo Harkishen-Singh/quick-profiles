@@ -7,8 +7,8 @@ app.config([
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: './components/test.html',
-        controller: 'test-contr'
+        templateUrl: './components/main.html',
+        controller: 'main-controller'
       })
       .when('/view', {
         templateUrl: './components/view.html',
@@ -17,10 +17,10 @@ app.config([
   }
 ]);
 
-app.controller('test-contr', [
+app.controller('main-controller', [
   '$scope',
   function($scope) {
-    console.warn('inside the test-contr');
+    console.warn('inside the main-contr');
   }
 ]);
 

@@ -1,6 +1,6 @@
 .view-body {
     width: 360px;
-    height: 600px;
+    height: 300px;
 }
 
 .header {
@@ -37,4 +37,8 @@
     display: block;
     text-align: left;
   }
+}
+
+.media-handles {
+  margin: 5%;
 }
