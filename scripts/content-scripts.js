@@ -16,15 +16,22 @@ function createFloatingCard() {
   mainCard.className = 'card';
   mainCard.style = 'width: 18rem;'
   mainCard.innerHTML = `
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+    <div class="card-body" id="aaaa">
+        <h5 class="card-title">Quick links</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Add quick links</h6>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Profile link</label>
+          <input type="text" class="form-control" id="profileLinkManual" aria-describedby="emailHelp" placeholder="Enter profile link">
+        </div>
+        <button class="btn btn-dark btn-sm">Submit</button>
     </div>
   `;
   document.body.appendChild(mainCard);
+
+  const cancelButton = document.createElement('img');
+  cancelButton.src="../assets/media-icons/cross-cancel.png";
+  console.warn(document.getElementById('aaaa'))
+  document.getElementById('aaaa').appendChild(cancelButton)
 }
 
 createFloatingButton();
