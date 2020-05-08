@@ -8,6 +8,11 @@
 		"default_popup": "ui/popup/view.html"
 	},
 	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["scripts/content-scripts.js"],
+		"css": ["assets/css/material/css/material.min.css", "styles/main.css"]
+	}],
 	"permissions": [
 		"http://google.com/",
 		"tabs",
